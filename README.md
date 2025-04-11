@@ -221,7 +221,7 @@ Permite elegir entre la interfaz de consola o gráfica.
 
 5. **Anotación Personalizada**: `@RevisarContenido` para marcar métodos a interceptar
 
-   ##Proceso de uso de la aplicación
+   ## Proceso de uso de la aplicación
    
    ### Paso 1: Selección de Interfaz
 
