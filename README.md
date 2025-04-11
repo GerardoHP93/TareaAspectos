@@ -1,4 +1,4 @@
-# Practica de conceptos básicos de Spring
+# Practica de conceptos básicos de Spring - Aspectos
 - **Nombre:** Gerardo Isidro Herrera Pacheco
 - **Matrícula:** ISC 68612
 - **Semestre:** 8vo
@@ -6,10 +6,9 @@
 - **Maestro:** Jose C Aguilar Canepa
 - **Institución:** Universidad Autónoma de Campeche, Facultad de Ingeniería
 
-#Sistema de Censura de Mensajes con Spring AOP
+# Sistema de Censura de Mensajes con Spring AOP
 
 Este proyecto implementa una aplicación en Java utilizando Spring Framework que permite a los usuarios enviar mensajes desde consola o una interfaz gráfica. El sistema detecta palabras prohibidas en el contenido del mensaje y aplica un proceso de censura utilizando la programación orientada a aspectos (AOP).
-
 
 ## Estructura del Proyecto
 
@@ -222,6 +221,8 @@ Permite elegir entre la interfaz de consola o gráfica.
 
 5. **Anotación Personalizada**: `@RevisarContenido` para marcar métodos a interceptar
 
+   ##Proceso de uso de la aplicación
+   
    ### Paso 1: Selección de Interfaz
 
    ![Elegir UI o consola](https://github.com/user-attachments/assets/e75dbc3a-6d6a-4ff6-8822-297548a53580)
@@ -230,13 +231,12 @@ Permite elegir entre la interfaz de consola o gráfica.
 - Las opciones disponibles son:
   - **Interfaz Gráfica**: Para usar una GUI (Graphical User Interface)
   - **Consola**: Para usar la interfaz de línea de comandos
-  - 
-
 
 
   ### Paso 2: Interfaz Gráfica de Mensajes
 
-  ![Mensaje procesado](https://github.com/user-attachments/assets/03b1b2f8-bfb7-4fc6-bb0b-ba0b38af9431)
+  ![Escribir mensaje en UI](https://github.com/user-attachments/assets/79452664-2197-4667-9396-6d47b5bdd46f)
+
 
 - Cuando se selecciona la interfaz gráfica, se muestra una ventana con:
   1. **Campo "Tu nombre"**: Donde el usuario ingresa su nombre (en este caso "Arturo")
@@ -244,26 +244,21 @@ Permite elegir entre la interfaz de consola o gráfica.
   3. **Área "Mensaje procesado"**: Vacía, esperando el resultado del procesamiento
   4. **Botón "Enviar Mensaje"**: Para enviar el mensaje al sistema de procesamiento
  
-  ![Escribir mensaje en UI](https://github.com/user-attachments/assets/79452664-2197-4667-9396-6d47b5bdd46f)
-
+  ![Mensaje procesado](https://github.com/user-attachments/assets/03b1b2f8-bfb7-4fc6-bb0b-ba0b38af9431)
 
 - El mensaje escrito contiene palabras prohibidas ("idiota") que serán censuradas por el sistema.
-
-
 
   ### Paso 3: Interfaz de Consola - Inicio
 - ![Consola, escribir nombre y bucle para escribir mensajes](https://github.com/user-attachments/assets/255d872e-569c-4ab9-b9bb-25f20f385d00)
   
 - Cuando se selecciona la opción de consola, se muestra:
-  1. **Título del sistema**: "== Sistema de Mensajes =="
-  2. **Solicitud de nombre**: Pide al usuario ingresar su nombre (en este caso "Gerardo")
-  3. **Menú de opciones**:
+  1. **Solicitud de nombre**: Pide al usuario ingresar su nombre (en este caso "Gerardo")
+  2. **Menú de opciones**:
      - 1. Escribir un mensaje
      - 2. Salir
-  4. **Prompt de selección**: Espera que el usuario ingrese 1 o 2
+  3. **Prompt de selección**: Espera que el usuario ingrese 1 o 2
 
 - Esta interfaz está lista para recibir la selección del usuario y actuar en consecuencia.
-
 
 
 - ### Paso 4: Procesamiento de Mensaje en Consola
